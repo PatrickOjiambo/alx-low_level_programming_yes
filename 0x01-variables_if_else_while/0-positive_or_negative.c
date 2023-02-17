@@ -4,7 +4,11 @@
 /**
  *Main-main function is here
  *
- *Description:Code is contained here-code for if else of the randomly generated number
+ *Description: This function prints the specifie
+ *error message to the
+ *console. It is typically used in
+ *error-handling code to provide more
+ *information about the nature of the error.
  *
  *Return: Returns success
  */
