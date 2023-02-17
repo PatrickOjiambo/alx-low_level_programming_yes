@@ -5,10 +5,8 @@
  *Main-main function is here
  *
  *Description: This function prints the specifie
- *error message to the
- *console. It is typically used in
- *error-handling code to provide more
- *information about the nature of the error.
+ *string whether the value of n is negativ, positive
+ *or equal to zero
  *
  *Return: Returns success
  */
