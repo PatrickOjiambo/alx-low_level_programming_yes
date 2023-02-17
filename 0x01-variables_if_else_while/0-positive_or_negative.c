@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- *Main-main function is here
+ *Main-this program checks whethet the value of n is positive, negative or equal to zero
  *
  *Description: This function prints the specifie
  *string whether the value of n is negativ, positive
