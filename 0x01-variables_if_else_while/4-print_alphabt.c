@@ -1,9 +1,8 @@
 #include<stdio.h>
 /**
- *main- Print letters of the alphabet from 
+ *main- Print letters of the alphabet from
  *'a' to 'z' aprt from the letters 'q' and 'e'
- *
- *Return: Always zero(success)
+  *Return: Always zero(success)
  *
  */
 int main(void)
@@ -12,7 +11,7 @@ int main(void)
 
 	for (letter = 'a'; letter <= 'z'; letter++)
 	{
-		if ((letter!='e') && (letter!='q'))
+		if ((letter != 'e') && (letter != 'q'))
 		putchar(letter);
 	}
 	putchar('\n');
