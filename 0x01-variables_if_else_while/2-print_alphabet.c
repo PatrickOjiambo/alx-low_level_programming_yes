@@ -1,10 +1,9 @@
 #include<stdio.h>
-/*number2
-*main- Print lowercase letters of the alphabet from 
-* 'a' to 'z'
-*
-*Return: always 0 (success)
-**/
+/**
+ * main - Prints the alphabet in lowercase 
+ * 'a' to 'z'
+ *Return: always 0 (success)
+ */
 int main(void)
 {
 	char letter;
