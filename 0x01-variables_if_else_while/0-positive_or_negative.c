@@ -2,15 +2,13 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- *Main-this program checks whethet the value of n is positive, negative or equal to zero
  *
- *Description: This function prints the specifie
- *string whether the value of n is negativ, positive
- *or equal to zero
- *
- *Return: Returns success
+ *main - Entry point
+ *Description: Assigns a random number to the variable n and prints if it's
+ *positive, negative, or zero
+ *Return: Always 0 (Success)
  */
-int main(void)
+ int main(void)
 
 	{
 	int n;
