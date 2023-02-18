@@ -1,5 +1,6 @@
 #include <stdlib.h>
- #include <time.h>
+#include <time.h>
+#include<stdio.h>
 /**
  *main- Prints whether the value of n is greater
  *than 5, is zero, or is less than 6 but not zero
