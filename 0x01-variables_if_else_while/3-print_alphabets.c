@@ -11,7 +11,7 @@ int main(void)
 	/* Print lowercase alphabet */
 	for (letter = 'a'; letter <= 'z'; letter++)
 	{
-        	putchar(letter);
+	putchar(letter);
 	}
 
 	/* Print uppercase alphabet */
@@ -19,7 +19,6 @@ int main(void)
 	{
 		putchar(letter);
 	}
-	
 	/* Print new line */
 	putchar('\n');
 
