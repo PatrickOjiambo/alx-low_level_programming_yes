@@ -7,13 +7,19 @@
  */
 int main(void)
 {
-	int n;
+	int n, comma;
+	
+	comma = 0;
 
 	for (n = 0; n < 10; n++)
 	{
-		putchar(n);
-		putchar(',');
-		putchar(' ');
+		if (comma == 1)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+		putchar(n + '0');
+		comma == 1;
 	}
 	putchar('\n');
 	return (0);
