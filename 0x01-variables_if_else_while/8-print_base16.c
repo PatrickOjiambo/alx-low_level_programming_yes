@@ -1,3 +1,4 @@
+#include<stdio.h>
 /**
  * main- Prints all the base 16 numbers
  * using the putchar function only
