@@ -3,7 +3,7 @@
  *
  *Return: Success(always true)
  */
-#include<stdio.h>
+#include<main.h>
 int main(void)
 {
 	_putchar('_');
