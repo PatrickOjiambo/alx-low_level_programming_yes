@@ -2,6 +2,7 @@
 #define MAIN_H
 
 /* function prototypes */
+int _abs(int);
 void print_alphabet(void);
 int _putchar(char c);
 void print_alphabet_x10(void);
