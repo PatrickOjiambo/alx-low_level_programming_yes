@@ -4,7 +4,8 @@
  *_abs - Prints the absolute value of a number
  *@n: Number to be checked
  *
- *return: Absolute value of the number n
+ *return: Returns -n if n is less than 0 else it returns
+ *original value of n
  */
 int _abs(int n)
 {
