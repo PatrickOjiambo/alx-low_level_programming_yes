@@ -4,6 +4,7 @@
 /* function prototypes */
 int _abs(int);
 void print_alphabet(void);
+int add(int, int);
 void times_table(void);
 void jack_bauer(void);
 int print_last_digit(int);
