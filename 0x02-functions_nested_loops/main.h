@@ -5,6 +5,7 @@
 int _abs(int);
 void print_alphabet(void);
 void print_to_98(int n);
+void print_times_table(int n);
 int add(int, int);
 void times_table(void);
 void jack_bauer(void);
