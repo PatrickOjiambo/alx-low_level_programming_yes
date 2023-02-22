@@ -4,11 +4,11 @@
  *_abs - Prints the absolute value of a number
  *@n: Number to be checked
  *
- *return: always true (success)
+ *return: Absolute value of the number n
  */
 int _abs(int n)
 {
-	if (n < 0 )
+	if (n < 0)
 	{
 		return (-n);
 	}
