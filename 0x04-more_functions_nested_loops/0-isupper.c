@@ -1,8 +1,8 @@
 /**
  *_isupper - Checks if a number is uppercase
- *@c:  The number to be checked
+ *@c: The number to be checked
  *
- *Return - Returns 1 if c is uppercase, else it returns 0
+ *Return: Returns 1 if c is uppercase, else it returns 0
  */
 #include "main.h"
 #include<ctype.h>
