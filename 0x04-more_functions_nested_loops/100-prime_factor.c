@@ -1,12 +1,15 @@
+/**
+ *main - Entry to the code
+ *Return: return void
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-
 int main(void)
 {
 	long int n = 612852475143;
 	long int factor = 2;
- 	long int largest_factor = 2;
+	long int largest_factor = 2;
 
 	while (n > 1)
 	{
@@ -24,6 +27,6 @@ int main(void)
 		}
 	}
 	printf("%ld\n", largest_factor);
-	return 0;
+	return (0);
 }
 
