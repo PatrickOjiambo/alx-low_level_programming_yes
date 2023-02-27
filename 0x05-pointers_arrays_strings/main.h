@@ -1,5 +1,6 @@
 #ifndef _PUTCHAR_H
 #define _PUTCHAR_H
+void rev_string(char *s);
 void print_rev(char *s);
 void _puts(char *str);
 int _strlen(char *s);
