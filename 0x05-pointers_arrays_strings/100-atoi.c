@@ -9,23 +9,37 @@
  */
 int _atoi(char *s)
 {
-	char *endptr;
-	int result;
+	int result = 0;
+	int sign = 1;
+	int i = 0;
 
-	while (*s && (*s < '0' || *s > '9'))
+	while (s[i] != '\0')
 	{
-		if (*s == '-')
+		if (s[i] == '-')
 		{
-			s++;
+			sign = -1;
+		}
+		else if (s[i] == '+')
+		{
+			sign = 1;
+		}
+		else if (s[i] >= '0' && s[i] <= '9')
+		{
+			if (result == 0)
+			{
+				result = sign * atoi(s + i);
+			}
+			else if (result > 0)
+			{
+				result = sign * atol(s + i);
+			}
+			else
+			{
+				result = sign * atoll(s + i);
+			}
 			break;
 		}
-		s++;
-	}
-	result = strtol(s, &endptr, 10);
-	if (s == endptr)
-	{
-		return (0);
+		i++;
 	}
 	return (result);
 }
-
