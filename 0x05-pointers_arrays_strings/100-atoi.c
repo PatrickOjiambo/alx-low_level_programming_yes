@@ -17,7 +17,7 @@ int _atoi(char *s)
 	{
 		if (s[i] == '-')
 		{
-			sign = -1;
+			sign = 1;
 		}
 		else if (s[i] == '+')
 		{
@@ -27,15 +27,15 @@ int _atoi(char *s)
 		{
 			if (result == 0)
 			{
-				result = atoi(s + i);
+				result = sign * atoi(s + i);
 			}
 			else if (result > 0)
 			{
-				result = atol(s + i);
+				result = sign * atol(s + i);
 			}
 			else
 			{
-				result = atoll(s + i);
+				result = sign * atoll(s + i);
 			}
 			break;
 		}
