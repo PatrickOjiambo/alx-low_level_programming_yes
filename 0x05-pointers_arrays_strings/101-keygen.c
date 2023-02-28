@@ -14,6 +14,7 @@ int main(void)
 	"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 	const int num_valid_chars = sizeof(valid_chars) - 1;
 	char password[MAX_PASSWORD_LENGTH + 1];
+	int i;
 
 	srand(time(NULL));
 
