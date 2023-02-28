@@ -27,15 +27,15 @@ int _atoi(char *s)
 		{
 			if (result == 0)
 			{
-				result = sign * atoi(s + i);
+				result = atoi(s + i);
 			}
 			else if (result > 0)
 			{
-				result = sign * atol(s + i);
+				result = atol(s + i);
 			}
 			else
 			{
-				result = sign * atoll(s + i);
+				result = atoll(s + i);
 			}
 			break;
 		}
