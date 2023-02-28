@@ -1,6 +1,7 @@
 #include <stddef.h>
 #include <limits.h>
 #include "main.h"
+#include <stdlib.h>
 /**
  *_atoi - converts string to integer
  *@s: Parameter
@@ -8,26 +9,23 @@
  */
 int _atoi(char *s)
 {
-	int result = 0;
-	int sign = 1;
-	int i = 0;
+	char *endptr;
+	int result;
 
-	while (s[i] != '\0')
+	while (*s && (*s < '0' || *s > '9'))
 	{
-		if (s[i] == '-')
+		if (*s == '-')
 		{
-			sign = -1;
-		}
-		else if (s[i] >= '0' && s[i] <= '9')
-		{
-			result = result * 10 + (s[i] - '0');
-		}
-		else if (result > 0)
-		{
+			s++;
 			break;
 		}
-		i++;
+		s++;
 	}
-	return (sign * result);
+	result = strtol(s, &endptr, 10);
+	if (s == endptr)
+	{
+		return (0);
+	}
+	return (result);
 }
 
