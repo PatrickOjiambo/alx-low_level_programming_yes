@@ -14,6 +14,10 @@ void print_number(int n)
 		_putchar('-');
 		n = -n;
 	}
+	if (n == 0)
+	{
+		_putchar('0');
+	}
 	while (n / divisor >= 10)
 		divisor *= 10;
 	while (divisor != 0)
