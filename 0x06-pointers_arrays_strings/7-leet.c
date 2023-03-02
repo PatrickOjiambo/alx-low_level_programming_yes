@@ -10,7 +10,7 @@ char *leet(char *str)
 	char *p = str;
 	char *leet_chars = "AaEeOoTtLl";
 	char *leet_codes = "4433007711";
-	int i;
+	size_t i;
 
 	while (*p != '\0')
 	{
