@@ -6,6 +6,7 @@
  *@size_r: Param 0
  *return: void
  */
+#include<string.h>
 #include "main.h"
 #include<stdio.h>
 char *infinite_add(char *n1, char *n2, char *r, int size_r) {
@@ -15,6 +16,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r) {
     int j = len2 - 1;
     int k = 0;
     int carry = 0;
+    int m;
     while (i >= 0 || j >= 0) {
         int digit1 = i >= 0 ? n1[i] - '0' : 0;
         int digit2 = j >= 0 ? n2[j] - '0' : 0;
@@ -39,7 +41,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r) {
         r[k++] = carry + '0';
     }
     r[k] = '\0';
-    for (int m = 0; m < k / 2; m++) {
+    for (m = 0; m < k / 2; m++) {
         char temp = r[m];
         r[m] = r[k - 1 - m];
         r[k - 1 - m] = temp;
