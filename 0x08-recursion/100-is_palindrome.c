@@ -5,6 +5,7 @@
  *
  * Return: 1 if the string is a palindrome, 0 otherwise
  */
+#include<stddef.h>
 #include "main.h"
 int is_palindrome(char *s)
 {
