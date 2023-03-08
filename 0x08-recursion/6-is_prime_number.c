@@ -4,6 +4,7 @@
  *
  * Return: 1 if n is prime, 0 otherwise
  */
+#include<math.h>
 #include "main.h"
 int is_prime_number(int n)
 {
