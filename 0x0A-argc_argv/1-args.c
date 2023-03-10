@@ -4,6 +4,7 @@
  *@argv: Param 2
  *Return: Void
  */
+#include "main.h"
 #include <stdio.h>
 int main(int argc, char *argv[])
 {
