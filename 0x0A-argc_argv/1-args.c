@@ -6,12 +6,12 @@
  */
 #include <stdio.h>
 
-int main(int argc, char *argv[])
-{
-	int counter;
-	for(counter=0; counter<argc; counter++)
-		printf("%d",counter);
-	
-	return 0;
+int main(int argc, char *argv[]) {
+  int count = 0;
+  for (int i = 1; i < argc; i++) {
+    count++;
+  }
+  printf("%d\n", count);
+  return 0;
 }
 
