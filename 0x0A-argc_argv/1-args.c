@@ -4,11 +4,14 @@
  *@argv: Param 2
  *Return: Void
  */
-#include "main.h"
 #include <stdio.h>
+
 int main(int argc, char *argv[])
 {
-    printf("%d\n", argc - 1);
-    return 0;
+	int counter;
+	for(counter=0; counter<argc; counter++)
+		printf("%d",counter);
+	
+	return 0;
 }
 
