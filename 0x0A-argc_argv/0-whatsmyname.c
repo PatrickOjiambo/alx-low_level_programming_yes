@@ -5,11 +5,13 @@
  *Return: Integer
  */
 #include <stdio.h>
+#include <string.h>
+
 int main(int argc, char *argv[])
 {
-	void (argc);
+    char *appname;
 
-	printf("%s\n", argv[0]);
-	return (0);
+    appname = strrchr(argv[0], '/'); /* '\\' on Windows */
+    printf("%s\n", appname ? ++appname : argv[0]);
+    return 0;
 }
-
