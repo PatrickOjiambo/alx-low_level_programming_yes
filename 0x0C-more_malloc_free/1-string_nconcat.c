@@ -6,6 +6,7 @@
  *
  * Return: a pointer to the concatenated string, or NULL on failure
  */
+#include <stddef.h>
 #include "main.h"
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
