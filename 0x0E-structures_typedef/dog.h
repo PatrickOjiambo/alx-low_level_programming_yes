@@ -1,10 +1,18 @@
-#ifndef DOG
-#define DOG
-void init_dog(struct dog *d, char *name, float age, char *owner);
-typedef struct
+#ifndef DOG_H
+#define DOG_H
+/**
+ * struct dog - structure for dog information
+ * @name: pointer to the name of the dog
+ * @age: age of the dog
+ * @owner: pointer to the name of the owner of the dog
+ *
+ * Description: structure that holds basic information about a dog
+ */
+typedef struct dog
 {
 	char *name;
 	float age;
 	char *owner;
-}dog_t;
-#endif
+} dog_t;
+#endif /* DOG_H */
+
