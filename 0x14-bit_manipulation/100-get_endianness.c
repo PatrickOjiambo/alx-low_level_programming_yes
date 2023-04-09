@@ -1,13 +1,17 @@
 #include "main.h"
-int get_endianness(void) {
-  unsigned int value;
-  unsigned char *ptr;
-  value = 0x12345678;
-  *ptr = (unsigned char *)&value;
-  if (*ptr == 0x78) {
-    return 1; // little endian
-  } else {
-    return 0; // big endian
-  }
+/**
+ * get_endianness - checks the endianness of the system
+ *
+ * Return: 0 if big endian, 1 if little endian
+ */
+int get_endianness(void)
+{
+	unsigned int num = 1;
+	char *endian = (char *)&num;
+
+	if (*endian == 1)
+		return (1); /* Little Endian */
+	else
+		return (0); /* Big Endian */
 }
 
